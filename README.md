@@ -1,81 +1,127 @@
+# SD-3101 [Pet Grooming Appoint System]
+Introduction
+The Open Source Pet Grooming Appointment System is a web-based project developed using PHP, HTML, and CSS. This system facilitates online appointment scheduling for clients seeking pet grooming services. It helps pet groomers manage appointments and organize schedules efficiently. The system supports three main roles: administrator, groomer, and client.
 
-# Open Source Doctor Appointment Booking System using PHP
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(1).png)
+**Project Overview**
+The system allows administrators to manage groomer profiles and their schedules, groomers to view and manage their appointments, and clients to book and manage their grooming appointments online.
 
-[Edoc](https://github.com/HashenUdara/edoc-doctor-appointment-system/) is a Simple web project that is made for e-channeling Using PHP,HTML & CSS.
-This initiative facilitates online appointment requests for clients or patients of medical establishments, including clinics and hospitals. This project can also help doctors to manage their appointment with their patients. This doctor's appointment system will organize the schedules of each patient's appointment, which will be submitted as a request to the doctor they have selected. The system comprises three key roles: administrator, doctor, and patient. The system admin will populate the list of the doctors with their specialties and along with the doctor's details and system credentials. The patients can browse the doctor's appointment system website to find a doctor that has the specialty of their needs. Patients can review the doctor's weekly schedule, enabling them to select a suitable day and time for their appointment. Subsequently, they can submit their appointment request. After that, the doctors can view all their appointments and the appointment request of the patients for their availability.
+**Features**
+
+**Admin**
+Add, edit, and delete groomers
+Schedule and remove grooming sessions
+View client details
+View client bookings
+
+**Groomers**
+View their appointments
+View their scheduled grooming sessions
+View client details
+Delete or edit their account settings
+
+**Clients**
+Make grooming appointments online
+Create and manage their accounts
+View past bookings
+Delete or edit their account settings
+
+Admin Dashboard      Groomer Dashboard       Client Dashboard
+
+Email: admin@petgroom.com	       Email: groomer@petgroom.com	| Email: client@petgroom.com	
+Password: 123 Password: 123Password: 123
+
+		
+**Setup and Installation**
+1. Clone the repository:
+   git clone https://github.com/HashenUdara/edoc-doctor-appointment-system.git
+
+2. Open your XAMPP Control Panel and start Apache and MySQL.
+3. Extract the downloaded source code zip file.
+4. Copy the extracted source code folder and paste it into the XAMPP's "htdocs" directory.
+5. Open PHPMyAdmin in a browser: http://localhost/phpmyadmin
+6. Create a new database named edoc.
+7. Import the provided SQL file (edoc.sql) located in the source code root folder.
+8.  Open the Pet Grooming Appointment System in a browser: http://localhost/pet-grooming-system/
+			
+**Screenshots** 
+
+			
+Technologies Used
+Apache Version: 2.4.39
+PHP Version: 7.3.5
+MySQL Version: 5.7.26
+Server Software: Apache/2.4.39 (Win64) PHP/7.3.5
+
+**Changelog**
+
+6 months ago - Initial release
+
+**Project Structurers**
+appointment/
+├─ admin/
+│  ├─ add-new.php
+│  ├─ add-session.php
+│  ├─ appointment.php
+│  ├─ delete-appointment.php
+│  ├─ delete-doctor.php
+│  ├─ delete-session.php
+│  ├─ doctors.php
+│  ├─ edit-doc.php
+│  ├─ index.php
+│  ├─ patient.php
+│  ├─ schedule.php
+├─ css/
+│  ├─ fonts/
+│  │  ├─ admin.css
+│  │  ├─ animations.css
+│  │  ├─ font-inter.css
+│  │  ├─ index.css
+│  │  ├─ login.css
+│  │  ├─ main.css
+│  │  ├─ patient.css
+│  │  ├─ signup.css
+├─ doctor/
+│  ├─ appointment.php
+│  ├─ delete-appointment.php
+│  ├─ delete-session.php
+│  ├─ doctors.php
+│  ├─ edit-doc.php
+│  ├─ index.php
+│  ├─ patient.php
+│  ├─ schedule.php
+│  ├─ settings.php
+├─ img/
+├─ patient/
+│  ├─ appointment.php
+│  ├─ booking-complete.php
+│  ├─ booking.php
+│  ├─ delete-account.php
+│  ├─ delete-appointment.php
+│  ├─ doctors.php
+│  ├─ edit-user.php
+│  ├─ index.php
+│  ├─ patient.php
+│  ├─ schedule.php
+│  ├─ settings.php
+├─ connection.php
+├─ create-account.php
+├─ image.png
+├─ index.html
+├─ LICENSE
+├─ login.php
+├─ logout.php
+├─ README.md
+├─ SECURITY.md
+├─ signup.php
+├─ SQL-Database_edoc.sql
 
 
-## Features
+**Contributors**
+Jim Dominic Pabalate - Initial development
 
-### Admin
-  
-- Admin can add doctors, edit doctors, delete doctors    
-- Schedule new doctors sessions, remove sessions   
-- View patients details    
-- View booking of patients    
-    
-    
- 
- 
-### Doctors
-
-- View their Appointment
-- View their scheduled sessions
-- View details of patients
-- Delete account    
-- Eedit account settings
-    
-
-    
-### Patiens(Clients)
-  
-  - Make appointment online
-  - Create accounts themslves
-  - View their old booking
-  - Delete account
-  - Edit account settings    
-
-    
-| Admin Dashboard | Doctor Dashboard | Patient Dashboard |
-| -------| -------| -------|
-| Email: `admin@edoc.com` | Email: `doctor@edoc.com` |   Email: `patient@edoc.com` | 
-| Password: `123` |  Password: `123` |  Password: `123` |
-| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(9).png) |    ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)  |
-
- 
-  
------------------------------------------------
+**Acknowledgments**
+- hashenudara
 
 
-# GET STARTED
-
-1. Open your XAMPP Control Panel and start Apache and MySQL.
-2. Extract the downloaded source code zip file.
-3. Copy the extracted source code folder and paste it into the XAMPP's "htdocs" directory.
-4. Browse the PHPMyAdmin in a browser. i.e. http://localhost/phpmyadmin
-5. Create a new database naming `edoc`.
-6. Import the provided SQL file. The file is known as DATABASE edoc.sql located inside the source code root folder.
-7. Browse the Doctor's Appointment Systsem in a browser. i.e. http://localhost/edoc-echanneling-main/.
-
-
-## Screenshots
-
-| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(1).png) | ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(2).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(4).png)|
-|--------------| --------------|   --------------|  --------------|    
-|  ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(5).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(7).png)| ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(8).png)|
-
-# The Project was developed using the following:
-
-Apache Version: 	`2.4.39`
-
-PHP Version: 		`7.3.5`
-
-Server Software: 	`Apache/2.4.39 (Win64) PHP/7.3.5`
-
-MySQL Version: 		`5.7.26`
-
-Demo video: https://youtu.be/mAWHYAHmit4
-
-
-
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
