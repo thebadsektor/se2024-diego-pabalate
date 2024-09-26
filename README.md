@@ -57,6 +57,7 @@ Server Software: Apache/2.4.39 (Win64) PHP/7.3.5
 6 months ago - Initial release
 
 **Project Structurers**
+```
 appointment/
 ├─ admin/
 │  ├─ add-new.php
@@ -114,7 +115,7 @@ appointment/
 ├─ SECURITY.md
 ├─ signup.php
 ├─ SQL-Database_edoc.sql
-
+```
 
 **Contributors**
 Jim Dominic Pabalate - Initial development
