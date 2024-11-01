@@ -156,13 +156,13 @@ Outline the project timeline, including milestones or deliverables. Example:
   	  	- Grooming history
   	  	- Automated reminders
 		- Custom grooming packages
-		- Pet profiles
+		- User profiles
 		- Real-time updates
 		- Online payments
-		- Loyalty rewards
+		- Choose Your Favourite Groomer
 		- Groomer ratings
 		- Pickup/drop-off tracking
-		- Groomer portfolio
+		- Groomer profiles
  
   	- Feature to Implement: Dockerize Project
 	- Completion Date: 27/10/2024
